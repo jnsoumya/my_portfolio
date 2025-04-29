@@ -1,19 +1,22 @@
 "use client";
 
-import { SidebarInset, SidebarTrigger } from "@/components/ui/sidebar";
+import { SidebarInset } from "@/components/ui/sidebar";
 import { Github, Linkedin, Menu } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { SkillsSection } from "./skills-section";
 import { ProjectsSection } from "./projects-section";
+import { useSidebar } from "@/components/ui/sidebar";
 
 export function MainContent() {
+  const { toggleSidebar } = useSidebar();
+
   return (
     <>
       <SidebarInset>
         <header className="p-4 md:p-6 flex flex-row justify-between items-center">
-          <SidebarTrigger className="h-6 w-6 text-green-800" />
+          <Menu className="h-6 w-6 text-green-800 hover:cursor-pointer" onClick={() => toggleSidebar()} />
 
           <div className="flex flex-row gap-4">
             <Link
