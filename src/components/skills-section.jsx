@@ -1,4 +1,8 @@
 import { Database, FileSpreadsheet, BarChart3 } from "lucide-react";
+import { Roboto_Slab } from "next/font/google";
+import { cn } from "@/lib/utils";
+
+const font = Roboto_Slab({ subsets: ["latin"] });
 
 const skills = [
   {
@@ -24,8 +28,8 @@ const skills = [
 
 export function SkillsSection() {
   return (
-    <section>
-      <h2 className="text-3xl md:text-4xl font-bold text-[#8B5A2B] mb-2">
+    <section className="my-12 lg:my-24">
+      <h2 className={cn("text-2xl md:text-4xl font-bold text-[#8B5A2B] mb-2", font.className)}>
         SKILLS
       </h2>
       <div className="h-1 w-[170px] bg-green-700 mb-12"></div>
@@ -41,12 +45,12 @@ export function SkillsSection() {
             </div>
 
             <div className="flex flex-col">
-              <h3 className="text-xl font-semibold text-[#8B5A2B] mb-2">
+              <h3 className={cn("text-xl lg:text-3xl font-semibold text-[#8B5A2B] mb-2", font.className)}>
                 {skill.title}
               </h3>
-              <p className="text-sm text-[#5A3921] mb-2">{skill.description}</p>
+              <p className="text-base mb-2">{skill.description}</p>
               {skill.additionalInfo && (
-                <p className="text-sm text-[#5A3921]">{skill.additionalInfo}</p>
+                <p className="text-sm ">{skill.additionalInfo}</p>
               )}
             </div>
           </div>

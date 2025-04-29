@@ -1,13 +1,30 @@
+import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
+
 import { PortfolioSidebar } from "@/components/portfolio-sidebar";
+import { HeaderNavbar } from "@/components/header-navbar";
 import { MainContent } from "@/components/main-content";
-import { SidebarProvider } from "@/components/ui/sidebar";
+import { SkillsSection } from "@/components/skills-section";
+import { ProjectsSection } from "@/components/projects-section";
 
 export default function Home() {
   return (
     <>
       <SidebarProvider defaultOpen={false}>
         <PortfolioSidebar />
-        <MainContent />
+        <SidebarInset>
+          <main className="px-6 xl:px-16 max-w-screen-lg xl:max-w-screen-2xl mx-auto">
+            <HeaderNavbar />
+            
+            <div className="h-1 w-full bg-green-700" />
+            <MainContent />
+
+            <div className="h-1 w-full bg-green-700" />
+            <SkillsSection />
+
+            <div className="h-1 w-full bg-green-700" />
+            <ProjectsSection />
+          </main>
+        </SidebarInset>
       </SidebarProvider>
     </>
   );

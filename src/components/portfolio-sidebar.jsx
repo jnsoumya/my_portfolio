@@ -10,7 +10,7 @@ import { CertificationsList } from "./certifications-list";
 
 export function PortfolioSidebar() {
   return (
-    <Sidebar collapsible="offcanvas" className="border-r border-green-700/20 bg-white py-4 px-2">
+    <Sidebar collapsible="offcanvas" className="bg-white py-4 px-2">
       <SidebarHeader className="p-4">
         <h2 className="text-xl font-bold text-[#8B5A2B]">CERTIFICATES</h2>
         <div className="h-1 w-[170px] bg-green-700 mt-1"></div>
