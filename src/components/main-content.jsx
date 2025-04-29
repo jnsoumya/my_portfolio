@@ -11,29 +11,31 @@ export function MainContent() {
   return (
     <>
       {/* <SidebarInset className="bg-[#E8E1DD] text-[#5A3921]"> */}
-      <header className="flex justify-between items-center p-4 md:p-6">
-        {/* <SidebarTrigger>
+      <div className="max-w-screen-xl mx-auto">
+        <header className="flex justify-between items-center p-4 md:p-6">
+          {/* <SidebarTrigger>
           <Menu className="h-6 w-6 text-green-800" />
         </SidebarTrigger> */}
-        <div className="flex gap-4">
-          <a
-            href="https://linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-          >
-            <Linkedin className="h-6 w-6 text-green-800" />
-          </a>
-          <a
-            href="https://github.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub"
-          >
-            <Github className="h-6 w-6 text-green-800" />
-          </a>
-        </div>
-      </header>
+          <div className="flex flex-row gap-4">
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <Linkedin className="h-6 w-6 text-green-800" />
+            </a>
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <Github className="h-6 w-6 text-green-800" />
+            </a>
+          </div>
+        </header>
+      </div>
 
       <div className="h-1 w-full bg-green-700"></div>
 
