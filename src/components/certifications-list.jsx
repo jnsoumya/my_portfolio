@@ -1,7 +1,11 @@
-"use client"
+"use client";
 
-import { SidebarMenu, SidebarMenuItem, SidebarMenuButton } from "@/components/ui/sidebar"
-import { Award } from "lucide-react"
+import {
+  SidebarMenu,
+  SidebarMenuItem,
+  SidebarMenuButton,
+} from "@/components/ui/sidebar";
+import { Award } from "lucide-react";
 
 const certifications = [
   {
@@ -20,7 +24,7 @@ const certifications = [
     title: "Visual Analytics with Tableau",
     url: "#visual-analytics",
   },
-]
+];
 
 export function CertificationsList() {
   return (
@@ -28,7 +32,10 @@ export function CertificationsList() {
       {certifications.map((cert) => (
         <SidebarMenuItem key={cert.url}>
           <SidebarMenuButton asChild>
-            <a href={cert.url} className="text-[#5A7D2B] hover:text-[#8B5A2B] transition-colors">
+            <a
+              href={cert.url}
+              className="text-[#5A7D2B] hover:text-[#8B5A2B] transition-colors"
+            >
               <Award className="h-4 w-4" />
               <span>{cert.title}</span>
             </a>
@@ -36,5 +43,5 @@ export function CertificationsList() {
         </SidebarMenuItem>
       ))}
     </SidebarMenu>
-  )
+  );
 }

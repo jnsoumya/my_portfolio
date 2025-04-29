@@ -1,11 +1,14 @@
 import { PortfolioSidebar } from "@/components/portfolio-sidebar";
 import { MainContent } from "@/components/main-content";
+import { SidebarProvider } from "@/components/ui/sidebar";
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
-      {/* <PortfolioSidebar /> */}
-      <MainContent />
-    </div>
+    <>
+      <SidebarProvider defaultOpen={false}>
+        <PortfolioSidebar />
+        <MainContent />
+      </SidebarProvider>
+    </>
   );
 }
