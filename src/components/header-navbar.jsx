@@ -10,14 +10,14 @@ export function HeaderNavbar() {
   return (
     <>
       <header className="px-2 py-8 flex flex-row justify-between items-center">
-        <Menu
+        {/* <Menu
           className="h-6 w-6 text-green-800 hover:cursor-pointer"
           onClick={() => toggleSidebar()}
-        />
+        /> */}
 
         <div className="flex flex-row gap-4">
           <Link
-            href="https://linkedin.com"
+            href="https://linkedin.com/in/jnsoumya"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
@@ -25,7 +25,7 @@ export function HeaderNavbar() {
             <Linkedin className="h-6 w-6 text-green-800" />
           </Link>
           <Link
-            href="https://github.com"
+            href="https://github.com/jnsoumya"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"

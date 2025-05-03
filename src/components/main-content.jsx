@@ -25,7 +25,7 @@ export function MainContent() {
             ad-hoc reports.
           </p>
           <a
-            href="/"
+            href="/Soumya_JN_CV.pdf"
             title="Download Resume"
             role="button"
             target="_blank"
