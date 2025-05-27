@@ -29,10 +29,10 @@ const skills = [
 export function SkillsSection() {
   return (
     <section className="my-12 lg:my-24">
-      <h2 className={cn("text-2xl md:text-4xl font-bold text-[#8B5A2B] mb-2", font.className)}>
+      <h2 className={cn("text-2xl md:text-4xl font-bold text-[#9a620b] mb-2", font.className)}>
         SKILLS
       </h2>
-      <div className="h-1 w-[170px] bg-green-700 mb-12"></div>
+      <div className="h-1 w-[125px] bg-green-700 mb-12"></div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
         {skills.map((skill, index) => (
@@ -45,7 +45,7 @@ export function SkillsSection() {
             </div>
 
             <div className="flex flex-col">
-              <h3 className={cn("text-xl lg:text-3xl font-semibold text-[#8B5A2B] mb-2", font.className)}>
+              <h3 className={cn("text-xl lg:text-3xl font-semibold text-[#4A6D1B] mb-2", font.className)}>
                 {skill.title}
               </h3>
               <p className="text-base mb-2">{skill.description}</p>

@@ -19,7 +19,7 @@ export function PortfolioSidebar() {
         <CertificationsList />
       </SidebarContent>
       <SidebarFooter className="p-4 text-xs text-gray-500 border-t border-green-700/10">
-        <p>&copy; Julia Ohorodnyk 2025. All rights reserved.</p>
+        <p>&copy; Soumya JN 2025. All rights reserved.</p>
       </SidebarFooter>
     </Sidebar>
   );

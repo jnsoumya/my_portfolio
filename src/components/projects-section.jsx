@@ -6,32 +6,68 @@ import { cn } from "@/lib/utils";
 const font = Roboto_Slab({ subsets: ["latin"] });
 
 
-// Sample project data
 const projects = [
   {
-    id: "licensed-drivers",
-    title: "LICENSED DRIVERS DATA ANALYSIS IN USA",
+    id: "stack-overflow-analysis",
+    title: "STACKOVERFLOW DEVELOPER SURVEY DATA ANALYSIS",
     description:
-      "Performed an in-depth exploration and cleaning of two datasets using Pandas. Developed and maintained a series of SQL queries to uncover patterns and test hypotheses regarding the distribution of licensed drivers across age groups, gender, and state governing party. Generated insightful visualizations using Python libraries Matplotlib and Seaborn to effectively communicate the findings.",
-    image: "/licensed_project.jfif",
+      "Performed comprehensive analysis of the Stack Overflow Developer Survey using a combination of SQL and Python. Developed a suite of SQL queries to explore trends and test hypotheses across key dimensions such as country, age, education level, programming experience, technology preferences, job satisfaction, and AI adoption. Cleaned and prepared the data using Pandas, and utilized Matplotlib and Seaborn to create clear, insightful visualizations that highlighted patterns in developer demographics, tech stack usage, and professional outlook.The analysis provided actionable insights into the developer community, revealing trends in technology adoption, job satisfaction, and the impact of AI on development practices.",
+    image: "/survey.jpg",
     technologies: ["Python", "Pandas", "SQL", "Matplotlib", "Seaborn"],
-    url: "#view-project",
+    url: "#view-project githublink",
+  },
+ {
+    id: "walmart-sales-analysis",       
+    title: "WALMART SALES ANALYSIS",    
+    description:
+      "This project focuses on analyzing Walmart's point-of-sale data to address key business questions using SQL. It includes:\n\n" +
+      "• Trend analysis by branch, category, and time\n" +
+      "• Profit and performance comparisons across cities\n" +
+      "• Behavior segmentation by time of day\n" +
+      "• Revenue change detection between 2022 and 2023\n\n" +
+      "Tools used: SQL (PostgreSQL), window functions, date/time parsing, aggregation, CTEs.\n" +
+      "Insights were designed to support decision-making in marketing strategy, store operations, and product planning.",
+    image: "/sample.jpg",
+    technologies: ["Python", "Pandas", "SQL", "Matplotlib", "Seaborn"],
+    url: "#view-project-github-link"
   },
   {
-    id: "food-sales",
-    title: "FOOD SALES AND CUSTOMER ANALYSIS",
+    id: "ecommerce-sales-performance",       
+    title: "E-COMMERCE SALES PERFORMANCE ANALYSIS",    
     description:
-      "Developed a robust food sales and orders database utilizing four PostgreSQL tables. Leveraged SQL expertise to analyze data and extract key insights, including customer satisfaction rate, repeat customer percentage, top-selling products, and net profit revenue. Constructed an interactive KPI dashboard in Tableau to visualize trends, provide actionable business metrics, and uncover opportunities for improvement.",
-    image: "/hero-banner-image.jpg",
-    technologies: ["PostgreSQL", "SQL", "Tableau", "Data Modeling"],
-    url: "#view-project",
+      "Analyzed an e-commerce dataset using SQL to uncover sales trends, customer behavior, and product performance. Key deliverables:\n\n" +
+      "• Total and average revenue by country and product\n" +
+      "• Monthly revenue trend and top customer profiling\n" +
+      "• Product bundling patterns (items frequently bought together)\n\n" +
+      "Used SQL CTEs, joins, aggregations, and window functions for efficient querying. Visualized results using Matplotlib and Seaborn for actionable business insights.",
+    image: "/sample2.jpg",
+    technologies: ["SQL", "Python", "Matplotlib", "Seaborn"],
+    url: "#view-project-ecommerce"
   },
   {
     id: "yelp-dataset",
     title: "THE YELP DATASET",
     description:
       "Conducted a comprehensive profiling and analysis of businesses and user data to establish correlations between user reviews and various metrics, including the number of fans, customer success rates, and business rating distributions across categories and locations.",
-    image: "/hero-banner-image.jpg",
+    image: "/review.jpg",
+    technologies: ["PostgreSQL", "SQL", "Google Docs"],
+    url: "#view-project",
+  },
+   {
+    id: "retail-dataset",
+    title: "RETAIL DATASET",
+    description:
+      "Conducted a comprehensive profiling and analysis of businesses and user data to establish correlations between user reviews and various metrics, including the number of fans, customer success rates, and business rating distributions across categories and locations.",
+    image: "/retail.jpg",
+    technologies: ["PostgreSQL", "SQL", "Google Docs"],
+    url: "#view-project",
+  },
+   {
+    id: "hr-dataset",
+    title: "THE YELP DATASET",
+    description:
+      "Conducted a comprehensive profiling and analysis of businesses and user data to establish correlations between user reviews and various metrics, including the number of fans, customer success rates, and business rating distributions across categories and locations.",
+    image: "/review.jpg",
     technologies: ["PostgreSQL", "SQL", "Google Docs"],
     url: "#view-project",
   },
@@ -40,15 +76,15 @@ const projects = [
 export function ProjectsSection() {
   return (
     <section className="my-12 lg:my-24">
-      <h2 className={cn("text-2xl md:text-4xl font-bold text-[#8B5A2B] mb-2", font.className)}>
+      <h2 className={cn("text-2xl md:text-4xl font-bold text-[#9a620b] mb-2", font.className)}>
         PROJECTS
       </h2>
-      <div className="h-1 w-[170px] bg-green-700 mb-12"></div>
+      <div className="h-1 w-[185px] bg-green-700 mb-12"></div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 3xl:grid-cols-3 gap-16">
         {projects.map((project) => (
           <div key={project.id} className="flex flex-col gap-8">
-            <div className="relative min-h-[350px] overflow-hidden rounded-lg">
+            <div className="relative min-h-[350px] overflow-hidden rounded-lg border-4 border-[#1a1a1a]">
               <Image
                 src={project.image || "/placeholder.svg"}
                 alt={project.title}
@@ -57,7 +93,7 @@ export function ProjectsSection() {
               />
             </div>
 
-            <h3 className={cn("text-xl font-bold text-[#8B5A2B]", font.className)}>
+            <h3 className={cn("text-xl font-bold text-[#598322]", font.className)}>
               {project.title}
             </h3>
 

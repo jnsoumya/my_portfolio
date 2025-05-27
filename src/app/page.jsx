@@ -15,13 +15,13 @@ export default function Home() {
           <main className="px-6 xl:px-16 max-w-screen-lg xl:max-w-screen-2xl mx-auto">
             <HeaderNavbar />
             
-            <div className="h-1 w-full bg-green-700" />
+            <div className="h-1 w-full bg-green-800" />
             <MainContent />
 
-            <div className="h-1 w-full bg-green-700" />
+            <div className="h-1 w-full bg-green-800" />
             <SkillsSection />
 
-            <div className="h-1 w-full bg-green-700" />
+            <div className="h-1 w-full bg-green-800" />
             <ProjectsSection />
           </main>
         </SidebarInset>
