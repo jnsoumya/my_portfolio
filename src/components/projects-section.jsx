@@ -55,20 +55,20 @@ const projects = [
   },
    {
     id: "retail-dataset",
-    title: "RETAIL DATASET",
+    title: "RETAIL SALES TRENDS & ANALYSIS",
     description:
-      "Conducted a comprehensive profiling and analysis of businesses and user data to establish correlations between user reviews and various metrics, including the number of fans, customer success rates, and business rating distributions across categories and locations.",
-    image: "/retail.jpg",
-    technologies: ["PostgreSQL", "SQL", "Google Docs"],
+      "This Sales Performance Dashboard visualizes key metrics such as YTD revenue, YoY growth, and goal progress. It highlights revenue trends by month, product, and store, enabling deeper insights into high-performing categories and locations. The dashboard supports strategic decisions through clear comparisons and goal tracking.",
+    image: "/retail_sales.png",
+    technologies: ["POWER BI", "SQL", "Excel"],
     url: "#view-project",
   },
    {
     id: "hr-dataset",
-    title: "THE YELP DATASET",
+    title: "WORKFORCE RETENTION ANALYSIS",
     description:
-      "Conducted a comprehensive profiling and analysis of businesses and user data to establish correlations between user reviews and various metrics, including the number of fans, customer success rates, and business rating distributions across categories and locations.",
-    image: "/review.jpg",
-    technologies: ["PostgreSQL", "SQL", "Google Docs"],
+      "This HR Analytics Dashboard visualizes employee attrition using key metrics and trends across multiple organizational and demographic dimensions to help identify patterns and areas for HR intervention.",
+    image: "/hr_attrition.png",
+    technologies: ["Tableau"],
     url: "#view-project",
   },
 ];

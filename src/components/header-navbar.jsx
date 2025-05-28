@@ -22,7 +22,7 @@ export function HeaderNavbar() {
             rel="noopener noreferrer"
             aria-label="LinkedIn"
           >
-            <Linkedin className="h-6 w-6 text-green-800" />
+            <Linkedin className="h-6 w-6 text-green-700" />
           </Link>
           <Link
             href="https://github.com/jnsoumya"
@@ -30,7 +30,7 @@ export function HeaderNavbar() {
             rel="noopener noreferrer"
             aria-label="GitHub"
           >
-            <Github className="h-6 w-6 text-green-800" />
+            <Github className="h-6 w-6 text-green-700" />
           </Link>
         </div>
       </header>

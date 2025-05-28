@@ -4,7 +4,7 @@ import "./globals.css";
 const inter = Open_Sans({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Data Analyst Portfolio",
+  title: "My Data Analyst Portfolio",
   description: "Portfolio website for a data analyst",
 };
 

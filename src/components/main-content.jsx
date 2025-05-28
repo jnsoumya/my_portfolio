@@ -11,10 +11,10 @@ export function MainContent() {
     <>
       <section className="grid md:grid-cols-2 gap-8 items-center my-12 lg:my-24">
         <div className="order-last md:order-first space-y-6">
-          <h1 className={cn("text-3xl md:text-5xl font-bold text-[#4A6D1B] mb-20", font.className)}>
+          <h1 className={cn("text-3xl md:text-5xl font-bold text-[#5A7D2B] mb-20", font.className)}>
             Hi, I'm Soumya
           </h1>
-          <h2 className={cn("text-lg md:text-xl font-medium uppercase", font.className)}>
+          <h2 className={cn("text-lg md:text-xl font-normal uppercase", font.className)}>
             Welcome to my Data Analyst Portfolio
           </h2>
           <p className="text-sm md:text-base font-normal mb-12">
