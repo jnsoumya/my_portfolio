@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
 import { Roboto_Slab } from "next/font/google";
 import { cn } from "@/lib/utils";
+import { Smile  } from "lucide-react";
 
 const font = Roboto_Slab({ subsets: ["latin"] });
 
@@ -12,7 +13,7 @@ export function MainContent() {
       <section className="grid md:grid-cols-2 gap-8 items-center my-12 lg:my-24">
         <div className="order-last md:order-first space-y-6">
           <h1 className={cn("text-3xl md:text-5xl font-bold text-[#5A7D2B] mb-20", font.className)}>
-            Hi, I'm Soumya
+            Hi, I'm Soumya <Smile className=" inline h-12 w-12 text-[#f59e0b]" />,
           </h1>
           <h2 className={cn("text-lg md:text-xl font-normal uppercase", font.className)}>
             Welcome to my Data Analyst Portfolio

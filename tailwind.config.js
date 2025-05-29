@@ -61,9 +61,7 @@ module.exports = {
           800: "#4A6D1B",
         },
         yellow: {
-          500: "#fbbf24",
-          600: "#f59e0b",
-          700: "#ca8a04",
+          darker : "#9a620b",
         },
       },
       borderRadius: {

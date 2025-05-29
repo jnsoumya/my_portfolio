@@ -36,7 +36,7 @@ const skills = [
 export function SkillsSection() {
   return (
     <section className="my-12 lg:my-24">
-      <h2 className={cn("text-2xl md:text-4xl font-bold text-[#9a620b] mb-2", font.className)}>
+      <h2 className={cn("text-2xl md:text-4xl font-bold text-yellow-darker mb-2", font.className)}>
         SKILLS
       </h2>
       <div className="h-1 w-[125px] bg-green-700 mb-12"></div>
