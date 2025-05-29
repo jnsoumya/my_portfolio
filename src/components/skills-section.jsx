@@ -1,4 +1,4 @@
-import { Database, FileSpreadsheet, BarChart3 } from "lucide-react";
+import { Database, ChartNoAxesCombined, ChartBarStacked,  BarChart3 } from "lucide-react";
 import { Roboto_Slab } from "next/font/google";
 import { cn } from "@/lib/utils";
 
@@ -10,20 +10,27 @@ const skills = [
     icon: <Database className="h-12 w-12 text-green-700" />,
     description:
       "Data profiling and cleaning data, working with structured and partially structured datasets using aggregations, window functions, and data modeling.",
-    additionalInfo: "Databases: PostgreSQL, SQLite, MySQL, Spark SQL",
+    additionalInfo: "Databases:  MySQL,PostgreSQL",
   },
   {
-    title: "Spreadsheets",
-    icon: <FileSpreadsheet className="h-12 w-12 text-green-700" />,
+    title: "Matplotlib & Seaborn",
+    icon: <ChartNoAxesCombined className="h-12 w-12 text-green-700" />,
     description:
-      "Organizing and filtering data, VLOOKUP function, conditional formatting, aggregation functions, pivot tables, creating dashboards and presentations.",
+      "Visualizing distributions, trends, and relationships within data using bar charts, line plots, histograms, heatmaps, and pair plots to support exploratory data analysis and communicate findings effectively.",
   },
   {
     title: "Tableau",
+    icon: <ChartBarStacked  className="h-12 w-12 text-green-700" />,
+    description:
+      "Creating KPI dashboards from data analysis to deliver business insights and recommendations to primary stakeholders.",
+  },
+  {
+    title: "Power BI",
     icon: <BarChart3 className="h-12 w-12 text-green-700" />,
     description:
-      "Creating KPI dashboards from the data analysis to deliver business insights and recommendations to primary stakeholders",
+      "Designing interactive and dynamic dashboards, integrating multiple data sources, using DAX functions for custom calculations, and delivering insights for data-driven decisions.",
   },
+  
 ];
 
 export function SkillsSection() {
