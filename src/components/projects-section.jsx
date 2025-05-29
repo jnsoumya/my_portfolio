@@ -93,7 +93,7 @@ export function ProjectsSection() {
               />
             </div>
 
-            <h3 className={cn("text-xl font-bold text-[#598322]", font.className)}>
+            <h3 className={cn("text-xl font-bold text-green-700", font.className)}>
               {project.title}
             </h3>
 

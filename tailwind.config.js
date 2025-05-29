@@ -57,6 +57,7 @@ module.exports = {
           dark: "#4A6D1B",
         },
         green: {
+          600: "#598322",
           700: "#5A7D2B",
           800: "#4A6D1B",
         },
